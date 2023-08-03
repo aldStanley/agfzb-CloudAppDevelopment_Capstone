@@ -10,9 +10,9 @@ urlpatterns = [
     # name the URL
 
     # path for about view
-
+    path('about/', views.about, name='about_us'),
     # path for contact us view
-
+    path('contact', views.contact, name='contact'),
     # path for registration
 
     # path for login
@@ -20,6 +20,8 @@ urlpatterns = [
     # path for logout
 
     path(route='', view=views.get_dealerships, name='index'),
+    path('static-template/', views.static_template, name='static_template'),
+
 
     # path for dealer reviews view
 
